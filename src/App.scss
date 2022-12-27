@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+  @media only screen and (min-width: 426px){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  }
+}
+.weather-container {
+  @media only screen and (min-width:426px) {
+    width: 425px;
+    height: 700px;
+  }
+  @media only screen and (min-width: 992px) {
+    //margin-top: 30px;
+  }
+  .current-day-weather {
+    padding: 0 20px;
+    text-align: left;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/images/clear/24fa5fb54ca2c725df93d72a9ffe6426.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    @media only screen and (min-width:600px) {
+      height: 100%;
+      border-radius: 12px;
+    }
+    @media only screen and (min-width:768px) {
+      //height: 300px;
+      //width: 600px;
+      //padding: 0 50px;
+      //position: relative;
+    }
+    @media only screen and (min-width:992px) {
+      //width: 800px;
+      //height: 500px;
+    }
+    .container {
+      margin-top: 50px;
+      position: relative;
+      @media only screen and (min-width:992px) {
+        //margin-top: 0;
+        //position: absolute;
+        //bottom: 50px;
+        //width: 300px;
+      }
+      .day-time {
+        text-align: center;
+        .time {
+          font-size: 20px;
+        }
+      }
+      .top {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 25px;
+        span,h4 {
+          margin: 20px;
+        }
+        @media only screen and (min-width:768px) {
+          //justify-content: flex-start;
+        }
+      }
+      .main {
+        .temperature {
+          margin-top: -10px;
+          margin-bottom: -10px;
+          font-size: 80px;
+        }
+        p {
+          line-height: 10px;
+          font-size: 18px;
+        }
+      }
+  
+      .bottom {
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 50px;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        @media only screen and (min-width: 426px) {
+          width: 380px;
+          
+          margin-bottom: 130px;
+        }
+        .divide {
+          border-left: 2px solid white;
+          height: 60px;
+          margin-top: 10px;
+        }
+      }
+    }
+    
+  }
+}

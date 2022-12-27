@@ -1,0 +1,20 @@
+what is the method to fetch data from third party api
+--first import hooks useState and useEffect
+--then initialize useState with the values that has to be fetch
+--then initialize useEffect arrow function and inside it use fetch with the url
+
+syntax to do this -
+
+import React, {useState, useEffect} from 'react'
+
+function App() {
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        fetch('URL')
+        .then(res => res.json())
+        .them(result => {
+            setData(result)
+        })
+    }, [])
+}
